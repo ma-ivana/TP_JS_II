@@ -6,30 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>TP JS II</title>
 </head>
 <body>
   
 
   <nav>
-    <h2>Manage <span>Employees</span></h2>    
-    <button type="submit">
+    <h2>Manage <span>Employees</span></h2>
+    <button type="submit" id="new_employee">
       <div class="icon">
         <i class="material-icons"> add_circle_outline</i> 
-      </div> <span>Add New Employee</span></button>
+      </div> <span>Add New Employee</span>
+    </button>
   </nav>
+
+  <div class="nomostrar" id="modal"></div>
 
   <section>
     <form action="" method="get">
-      <input type="text" placeholder="Filter...">
+      <input type="text" id="filter" placeholder="Filter...">
     </form>
 
-    <div class="list__main">
-      <div class="list__body">
+    <div class="main">
+      <div class="table_full">
         <table>
           <thead>
-            <tr>
-              <button type=""> </button>
+            <tr class="large">
               <th>Name</th>
               <th>Email</th>
               <th>Address</th>
@@ -43,6 +46,7 @@
       </div>
     </div>
 
+  
   <script src="main.js"></script>
 </body>
 </html>

@@ -30,19 +30,90 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5px 12px;
+  }
+}
 
+.createNewEmployee {
+  width: 200px;
+  height: auto;    
+}
+
+.nomostrar {
+  display: none;
+}
+
+#modal {
+  width: 400px;
+  height: 450px;
+  position: fixed;
+  top: 50px;
+  left: 550px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-sizing: content-box;
+  background-color: white;
+  font-family: 'Varela Round', sans-serif;
+  color: rgb(87, 86, 86);
+  font-size: 15px;
+    h6 {
+      font-size: 24px;
+      margin-top: 25px;
+      margin-bottom: 5px;
+      padding-left: 20px;
+    }
+    hr {
+      border-top: 0.3px solid grey;
+    }
+    form {
+      padding-top: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 25px;
+      input {
+        width: 350px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+  .div-button {
+    background-color: rgb(236, 248, 253);
+    height: 80px;
+    width: 100%;
+
+    button {
+      margin-top: 20px;
+      width: 80px;
+      height: 30px;
+    }
+
+    #cancel {
+      margin-left: 190px;
+      font-family: 'Varela Round', sans-serif;
+      color: rgb(87, 86, 86);
+      background-color: white;
+      border: 0.5px solid grey;
+      border-radius: 3%;   
+    }
+  
+    #createNewEmployee, #edit {
+      margin-left: 10px;
+      background-color: rgb(88, 182, 88);
+      font-family: 'Varela Round', sans-serif;
+      color: white;
+      border: none;
+      border-radius: 3%;    
+    }
   }
 }
 
 section {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  form {
 
+  form {
     input {
       width: 350px;
       height: 30px;
@@ -51,4 +122,50 @@ section {
     }
   }
 
+  .main {
+    margin: 25px 100px;
+    font-family: 'Varela Round', sans-serif;
+    table {
+      border-bottom: 1px solid #ddd;
+      width: 100%;      
+
+      thead {
+        height: 100px;      
+
+        .large {
+          th {
+            width: 200px;
+            height: 50px;
+            text-align: left;
+            vertical-align: center;
+            border-bottom: 1px solid #ddd;
+          }          
+        }        
+      }
+
+      tbody {        
+        tr {
+          height: 50px;
+          td {
+            width: 200px;
+            vertical-align: center;
+          }
+        }
+        .small {
+            height: 30px;
+        }
+      }      
+    }
+    
+    .actions {      
+      .fa-edit {
+        color: rgb(12, 112, 12);
+        width: 50px;
+      }
+      .fa-trash {
+        color: rgb(197, 29, 29);
+        width: 50px;
+      }
+    }
+  }
 }
