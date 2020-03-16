@@ -129,7 +129,7 @@ const modalNewEmployee = (name = "", email = "", address = "", phone = "") => {
       <label>Email</label><br>
         <input type="text" id="employee_email" value=${email}><br>
       <label>Address</label><br>
-        <input type="text" name="Adress" id="employee_address" maxlength="60" rows="3" value=${address}><br> 
+        <input type="text" name="Address" id="employee_address" maxlength="60" value=${address}><br> 
       <label>Phone</label><br>
         <input type="text" id="employee_phone" value=${phone}><br>
     </form>
