@@ -1,3 +1,11 @@
+// Excelente trabajo Ivi, particularmente destacable es el buen uso de funciones a lo largo del trabajo
+// que lo hacen legible y muy claro.
+// No tengo muchisimo para agregar, deje algunos comentarios a lo largo del codigo pero son detalles:
+// es lo que pasa frente a un trabajo bien hecho :)
+// Felicitaciones y segui asi!
+
+
+
 //https://docs.google.com/document/d/1ma8TwDGabJjIQK2LrJgVqKBrmGd56QGQyNa2WZ0_DwQ/edit
 //https://ada-tp-js-2.surge.sh/
 //https://tp-js-2-api-wjfqxquokl.now.sh/users
@@ -13,6 +21,7 @@ let phone = '';
 
 
 const printUsers = (result) => {
+  // excelente esta funcion 
   let acumuladora = "";
   result.forEach(element => {
     acumuladora += `<tr class="large">
@@ -44,6 +53,7 @@ const getUsers = () => {
     const editTool = document.getElementsByClassName("pencil");
     const removeTool = document.getElementsByClassName("trash");
 
+    // detalle, pero recorda siempre dejar un espacio entre operadores. Deberia ser i < editTool
     for (let i = 0; i <editTool.length; i++) {
       editTool[i].onclick = () => {
         const edit = editTool[i].id
@@ -106,6 +116,7 @@ const getUsers = () => {
 getUsers();
 
 
+// increible lo bien que funciona esto y lo breve del codigo.
 const empleadoElegido = document.getElementById("filter");
 empleadoElegido.onkeypress = e => {
   if (e.keyCode === 13) {
@@ -118,6 +129,12 @@ empleadoElegido.onkeypress = e => {
 }
 
 const modalNewEmployee = (name = "", email = "", address = "", phone = "") => {
+  
+  // preferimos no utilizar <br> como elemento de estilado
+  // en ese caso qiza yo hubiera optado por hacer que form tuviera flex
+  // y flex-direction: column para evitar el uso de br
+  
+  // excelente ese ternario!!
   modal.innerHTML = `
     <div>
       <h6>Add Employee</h6>
